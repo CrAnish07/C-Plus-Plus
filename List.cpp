@@ -30,5 +30,18 @@ int main() {
     ls.sort();
     explainList(ls);
 
+    cout << "\nSize of the list is: " << ls.size() << endl;
+
+    cout << "\nFirst element of the list: " << ls.front() << endl;
+    cout << "\nLast element of the list: " << ls.back() << endl;
+
+    cout << "\nDeleting the last element of the list: " << endl;
+    ls.pop_back();
+    explainList(ls);
+
+    cout << "\nDeleting the first element of the list: " << endl;
+    ls.pop_front();
+    explainList(ls);
+
     return 0;
 }
