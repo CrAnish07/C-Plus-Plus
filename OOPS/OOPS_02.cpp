@@ -9,10 +9,9 @@ class Hero{
 
     private :
     int health;
-
-    public:
     char level;
 
+    public:
     int gethealth(){
         return health;
     }
