@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/C++ tutorial",
-      "program": "d:/C++ tutorial/build/Debug/outDebug",
+      "cwd": "d:/C++ tutorial/OOPS",
+      "program": "d:/C++ tutorial/OOPS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

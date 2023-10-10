@@ -2,9 +2,11 @@
 using namespace std;
 
 void printGCD(int N1, int N2){
-    for (int i = 1; i <= N1; i++){
+    int GCD = 1;
+    for (int i = min(N1,N2); i >= 1; i--){
         if(N1%i == 0 && N2%i == 0){
-            cout << "GCD of the numbers is" << i << endl;
+            cout << "GCD of the two number is: " << i << endl;
+            break;
         }
     }
 }

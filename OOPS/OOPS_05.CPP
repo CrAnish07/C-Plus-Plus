@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Constructor
+// Swallow Copy and Deep Copy
 
 class Hero{
     private:
@@ -38,15 +38,17 @@ class Hero{
         return level;
     }
 
-    void sethealth(int health) {
-        this->health = health;
+    void sethealth(int h) {
+        health = h;
     }
-    void setlevel(char level) {
-        this->level = level;
+    void setlevel(char ch) {
+        level = ch;
     }
     void print(){
-        cout << "Health ->" << this->health << endl;
-        cout << "Level ->" << this->level << endl;
+        cout << endl;
+        cout << "[ Name : " << this->name << ", ";
+        cout << "Health : " << this->health << ", ";
+        cout << "Level : " << this->level << " ]" << endl;
     }
     void setname(char name[]){
         strcpy(this->name , name);
@@ -56,12 +58,17 @@ class Hero{
 
 int main() {
 
-    Hero Anish(10);
-    cout << "Address of object is: " << &Anish << endl;
+    Hero hero1;
+    hero1.setlevel('D');
+    hero1.sethealth(12);
+    char name[7] = "Anish";
+    hero1.setname(name);
 
-    Hero temp(22, 'A');
-    Hero R(temp);
-    R.print();
+    hero1.print();
+
+    Hero hero2(hero1);
+    hero2.print();
 
     return 0;
 }
+
